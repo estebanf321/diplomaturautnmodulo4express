@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+  {{!--
+  <script defer src="/public/javascripts/menu.js"></script> --}}
+
+</head>
+
+<body>
+
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo nav-link">Autopartes</a>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <a href="/" class="nav-menu-link nav-link">Home</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="/nosotros" class="nav-menu-link nav-link">Nosotros</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="/servicios" class="nav-menu-link nav-link">Servicios</a>
+        </li>
+        <li class="nav-menu-item">
+          <a href="/contacto" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  {{{body}}}
+
+  <footer>
+    <div class="holder">
+      <h5> Todas las marcas y logos están presentes s&oacutelo a título informativo y son propiedad de sus respectivos
+        dueños.</h5>
+      <p> Autopartes &copy;2021 - Todos los derechos reservados.</p>
+      <h5>Av.  Nº 7 - Rosario - Santa Fe - Argentina // WhatsApp: +3413448899 -
+        ventas@autopartes.ar</h5>
+    </div>
+  </footer>
+
+</body>
+
+</html>
