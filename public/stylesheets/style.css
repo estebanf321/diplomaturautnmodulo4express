@@ -23,17 +23,51 @@ footer h5{
 
 .bienvenidos{
   box-sizing: border-box;
-  width: 75%;
-  padding-right: 2em;
+  width: 100%;
+  padding: 10px 20px ;
+  
   }
   
 .bienvenidos p{
       text-align: justify;
   }
 
+  .formulario2  {
+    background:rgb(224, 224, 248);
+    width: 50%;
+    padding: 10px 20px ;
+    font-style: italic;
+    font-weight: bold;
+  
+   } 
+  
+ .formulario2 ul {
+  list-style: none;
+  font-weight:normal;
+ } 
+
+ .formulario2 .acciones{
+  text-align: center;
+}
+
 .historia p{
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: justify;
+    width: 100%;
+    padding: 0 15px 0 15px;
+}
+
+.empresaimg{
+  margin-bottom: 1.5em;
+}
+
+.empresaimg img{
+  width: 100%;
+  padding: 0 15px 0 15px;
+}
+
+.ubicacion p{
+  font-size: 0.8em;
 }
 
 .servicio{

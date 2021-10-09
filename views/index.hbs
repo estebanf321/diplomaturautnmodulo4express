@@ -1,10 +1,75 @@
 <h1>{{title}}</h1>
+
+<div class="empresaimg">
+    <img src="images/home/marcas.jpg" alt="Marcas">
+</div>
+
 <div class="bienvenidos">
     <h2>Bienvenidos</h2>
     <p>Autopartes responde con seriedad y compromiso a las exigencias del sector autopartista, que
         se
         encuentran en constante evoluci&oacuten.</p>
-    <p>Nuestra tienda está especializada en la comercializaci&oacuten de toda la línea de repuestos de vehículos
-        Chevrolet, Citroen, Fiat, Ford, Peugeot, Renault, Toyota, Volkswagen, y muchas marcas más. </p>
-
+    <p>Brindamos un servicio de calidad: centro de atención telefónica y chat directo, cobertura y envíos a todo el país
+        además de países limítrofes . </p>
+    <p>Nuestra tienda está especializada en la comercialización de toda la línea de repuestos de vehículos Chevrolet,
+        Citroen, Fiat, Ford, Peugeot, Renault, Toyota, Volkswagen, y muchas marcas más.</p>
 </div>
+
+<h2> Ingreso Catálogo de productos </h2>
+
+<form action="/ingresar" method="post" class="formulario2">
+    <p>
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre" size="25" maxlength="40" />
+    </p>
+
+    <p>
+        <label for="">Empresa</label>
+        <input type="text" name="empresa" size="25" maxlength="40" />
+    </p>
+
+    <p>
+        <label for="">Tipo Empresa</label>
+        <select name="tipoempresa">
+            <option value="repuestero">Repuestero</option>
+            <option value="agencia">Agencia</option>
+            <option value="distribuidor">Distribuidor</option>
+            <option value="otro">Otro</option>
+        </select>
+    </p>
+
+    <label for="">Responsable Inscripto</label>
+    <ul>
+        <li>
+            <input type="radio" name="ri" value="true">
+            <label>Si</label>
+        </li>
+        <li>
+            <input type="radio" name="ri" value="false">
+            <label>No</label>
+        </li>
+    </ul>
+
+    <label>Catálogos:</label>
+    <ul>
+        <li>
+            <input type="checkbox" name="catalogos[]" value="direccion" id="direccion">
+            <label for="">Dirección</label>
+        </li>
+        <li>
+            <input type="checkbox" name="catalogos[]" value="encendido" id="encendido">
+            <label for="">Encendido</label>
+        </li>
+        <li>
+            <input type="checkbox" name="catalogos[]" value="faros" id="faros">
+            <label for="">Faros</label>
+        </li>
+        <li>
+            <input type="checkbox" name="catalogos[]" value="refrigeracion" id="refrigeracion">
+            <label for="">Refrigeración</label>
+        </li>
+    </ul>
+
+
+    <p class="acciones"> <input type="submit" value="ingresar"></p>
+</form>
