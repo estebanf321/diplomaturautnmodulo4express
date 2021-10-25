@@ -7,6 +7,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config();
+
+var pool =require('./models/db');
+
+pool.query("select * from empleados").then(function(resultados){
+console.log(resultados);
+});
+
 var indexRouter = require('./routes/index'); //index
 var usersRouter = require('./routes/users');
 
