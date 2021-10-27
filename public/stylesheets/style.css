@@ -97,6 +97,29 @@ footer h5{
   line-height: 1.2em;
 }
 
+.servicio img{
+  border-radius: 0.8em;
+  background-color: black;
+}
+
+.servicio:nth-child(even) img{  /*par 0,2,4*/
+float: right;
+margin: 0 0 0 1em;
+}
+
+.servicio:nth-child(even) .info{  /*par 0,2,4*/
+  float:left;
+}
+
+.servicio:nth-child(odd) img{  /*impar 1,3,5*/
+  float: left;
+  margin: 0 1em 0 0;
+  }
+  
+.servicio:nth-child(odd) .info{  /*impar 1,3,5*/
+      float:right;
+}
+
 .formulario label{
   vertical-align: top;
   width: 50%;

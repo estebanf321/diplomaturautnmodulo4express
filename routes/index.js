@@ -17,4 +17,5 @@ router.post('/ingresar', function(req, res, next) {
   res.render('productos', { nombre,empresa,tipoempresa, });
 });
 
+
 module.exports = router;

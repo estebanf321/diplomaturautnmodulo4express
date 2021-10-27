@@ -1,0 +1,19 @@
+<h2>Ingreso de Cliente a Novedades</h2>
+
+<form action="/login" method="post" class="formulario2">
+    <p>
+        <label for="">Usuario:</label>
+        <input type="text" name="usuario" id="inputUser" />
+    </p>
+
+    <p>
+        <label for="">Clave__:</label>
+        <input type="password" name="password" id="inputPassword" />
+    </p>
+
+    <p class="acciones"> <input type="submit" value="Ingresar"></p>
+</form>
+
+{{#if error}}
+<p style="color:#FF0000">* Usuario y/o Clave Incorrectos</p>
+{{/if}}
